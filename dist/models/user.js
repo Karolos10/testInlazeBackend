@@ -17,17 +17,11 @@ exports.user = connection_1.default.define('user', {
     },
     nickname: {
         type: sequelize_1.DataTypes.STRING,
-        unique: true,
-        allowNull: false
     },
     email: {
         type: sequelize_1.DataTypes.STRING,
-        unique: true,
-        allowNull: false
     },
     password: {
         type: sequelize_1.DataTypes.STRING,
-        unique: true,
-        allowNull: false
     }
 });

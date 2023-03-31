@@ -36,12 +36,12 @@ const newUser = (req, resp) => __awaiter(void 0, void 0, void 0, function* () {
     const hashedPassword = yield bcrypt_1.default.hash(password, 10);
     console.log(hashedPassword);
     try {
-        /* await user.create({
+        yield user_1.user.create({
             name: name,
             nickname: nickname,
             email: email,
             password: hashedPassword
-        }) */
+        });
         resp.json({
             msg: `Usuario ${name} creado exitosamente`,
         });

@@ -29,12 +29,12 @@ export const newUser = async (req: Request, resp: Response) => {
   console.log(hashedPassword);
 
   try {
-    /* await user.create({
+    await user.create({
         name: name,
         nickname: nickname,
         email: email,
         password: hashedPassword
-    }) */
+    })
     resp.json({
       msg: `Usuario ${name} creado exitosamente`,
     });

@@ -2,7 +2,7 @@
 import express, { Application } from 'express';
 import routesProducts from '../routes/product';
 import routesUser from '../routes/user';
-import { product } from './product';
+import { Product } from './product';
 import { user } from './user';
 import cors from 'cors'
 
@@ -40,7 +40,7 @@ class Server {
     async dbConecction(){
         try {
 
-            await product.sync();
+            await Product.sync();
             await user.sync();
             
         } catch (error) {

@@ -15,19 +15,13 @@ export const user = sequalize.define('user', {
 
     nickname: {
         type: DataTypes.STRING,
-        unique: true,
-        allowNull: false
     },
 
     email: {
         type: DataTypes.STRING,
-        unique: true,
-        allowNull: false
     },
 
     password: {
         type: DataTypes.STRING,
-        unique: true,
-        allowNull: false
     }
 })
